@@ -26,4 +26,4 @@ jobs:
       env:
         step2_RESULTS: "${{steps.step2.outputs.result}}"
       with:
-        runners: '2'
+        runners: 'step2'
