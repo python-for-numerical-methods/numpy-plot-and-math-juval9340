@@ -17,10 +17,11 @@ def normalized_array(data):
     data = np.array(data)
     
     # --- כיתבו את הקוד שלכם כאן ---
- import numpy as np
+import numpy as np
 
 def normalized_array(data):
     data = np.asarray(data)
+    
     min_val = np.min(data)
     max_val = np.max(data)
 
@@ -28,12 +29,6 @@ def normalized_array(data):
         return np.zeros_like(data, dtype=float)
 
     return (data - min_val) / (max_val - min_val)
-
-
-if __name__ == "__main__":
-    test_data = [10, 20, 30, 40, 50]
-    print(f"Original: {test_data}")
-    print(f"Normalized: {normalized_array(test_data)}")
     # חשוב לזכור להחליף את pass ב- return
 
 if __name__ == "__main__":
