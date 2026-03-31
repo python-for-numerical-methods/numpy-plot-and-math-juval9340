@@ -23,8 +23,9 @@ def normalized_array(input_array):
     if np.min(data) == np.max(data)
         return np.zeros(data.shape)
     else:
-        data = (data - np.min(data)) / (np.max(data) - np.min(data))
-   return data
+        new_array = (data - np.min(data)) / (np.max(data) - np.min(data))
+   
+    return new_array
 
     # חשוב לזכור להחליף את pass ב- return
 
