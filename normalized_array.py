@@ -17,8 +17,6 @@ def normalized_array(data):
     data = np.array(data)
     
     # --- כיתבו את הקוד שלכם כאן ---
-import numpy as np
-
 def normalized_array(data):
     data = np.asarray(data)
     
