@@ -3,7 +3,7 @@ import numpy as np
 def normalized_array(input_array):
     data = input_array.copy()
     data = np.array(data)
-    if np.min(data) == np.max(data)
+    if np.min(data) == np.max(data):
         return np.zeros(data.shape)
     else:
         new_array = (data - np.min(data)) / (np.max(data) - np.min(data))
